@@ -1,0 +1,62 @@
+<div *ngIf="!en">
+    <h1>Pls wait while Vidyo client is getting ready!...</h1>
+</div>
+
+<div *ngIf="en">
+
+     <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Topic: {{topic}} <small> (built on vidyo.io) </small></h2>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group" role="group" style="padding-top:20px">
+                  <button (click)="exit($event)" class="btn btn-default">Exit</button>
+                  <button (click)="mute($event)" class="btn btn-default">Mute</button>
+                  <button (click)="share($event)" class="btn btn-default">Share</button>
+               </div>
+          </div>
+       </div>
+  </div>
+       
+    <!--<div class="page-header">
+        <h1>Topic: {{topic}} <small> (built on viydo.io) </small></h1>
+        <div class="btn-group" role="group">
+            <button (click)="exit($event)" class="btn btn-default">Exit</button>
+            <button (click)="mute($event)" class="btn btn-default">Mute</button>
+            <button (click)="share($event)" class="btn btn-default">Share</button>
+        </div>
+    </div>-->
+
+    <!--<button (click)="enter($event)">Enter</button>-->
+    
+    <div id="renderer" class="rendererWithOptions pluginOverlay" style="width:100%;height:200px"></div>
+
+     <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h2>Messages...</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group" style="padding-top:20px">
+                  <input type="text" class="form-control" placeholder="Type msg and hit send button" #newChat>
+                    <span class="input-group-btn">
+                        <button (click)="sendchatmsg(newChat.value)" class="btn btn-default">Send</button>
+                    </span>
+                 </div>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <ul class="list-group">
+        <li *ngFor="let cm of cms" class="list-group-item">
+            {{cm.p}} : {{cm.msg}}   
+        </li>
+    </ul>
+</div>
+

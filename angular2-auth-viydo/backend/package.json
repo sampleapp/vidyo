@@ -1,0 +1,23 @@
+{
+  "name": "vidyo-backend-api",
+  "version": "0.1.0",
+  "description": "vidyo backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "cors": "^2.7.1",
+    "dotenv": "^0.4.0",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "express-jwt": "^0.3.2",
+    "jsonwebtoken": "^1.3.0",
+    "lodash": "^2.4.2",
+    "morgan": "^1.7.0",
+    "python-shell": "^0.4.0"
+  }
+}

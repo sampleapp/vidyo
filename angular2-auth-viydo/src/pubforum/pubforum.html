@@ -1,0 +1,29 @@
+
+<!--<header class="navbar  navbar-inverse navbar-fixed-top">
+    <h1>Public Forum (Vidyo.io): Logged in user : {{userid}}</h1>
+</header>-->
+
+<div class="page-header">
+  <h2>Welcome '{{userid}}' <small> to Public Forum</small></h2>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+         <input #newRoom class="form-control" placeholder="Type topic and click 'Add' to create new topic."
+      (keyup.enter)="createRoom(newRoom.value)"
+      (blur)="createRoom(newRoom.value); newRoom.value='' ">
+      <span class="input-group-btn">
+            <button (click)=createRoom(newRoom.value) class="btn btn-default">Add</button>
+      </span>        
+    </div>
+  </div>
+</div>
+
+<h2>Discussion topics! <small>click to participate...</small></h2>
+<ul class="list-group">
+    <li *ngFor="let room of rooms" class="list-group-item">
+    <a href="#" (click)=join($event)>{{room.roomName}}</a><small> short description...</small>
+    <span class="badge">0</span>
+    </li>
+</ul>
