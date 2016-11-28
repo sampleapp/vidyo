@@ -13,7 +13,7 @@ const template = require('./login.html');
 })
 export class Login {
   //server:string = "https://192.168.1.100:3001";
-  server:string = "https://localhost:3001";
+  server:string = "https://192.168.148.2:3001";
 
   constructor(public router: Router, public http: Http) {
   }
