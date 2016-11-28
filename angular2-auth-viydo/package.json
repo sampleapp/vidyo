@@ -6,7 +6,7 @@
   "scripts": {
     "server": "cd backend && npm i && node server.js",
     "front": "webpack-dev-server --https --inline -d --colors --display-error-details --display-cached --host 192.168.1.100 --port 3000",
-    "front1": "webpack-dev-server --https --inline -d --colors --display-error-details --display-cached --host 192.168.56.102 --port 3000",
+    "front1": "webpack-dev-server --https --inline -d --colors --display-error-details --display-cached --host 192.168.148.2 --port 3000",
     "start": "npm run front",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
