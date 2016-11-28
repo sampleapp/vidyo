@@ -12,7 +12,6 @@ var app = express();
 
 dotenv.load();
 
-// Parsers--Test Comment
 // Parsers
 // old version of line
 // app.use(bodyParser.urlencoded());
