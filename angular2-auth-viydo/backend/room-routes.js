@@ -36,9 +36,9 @@ app.post('/api/token', function(req, res) {
 
    var options = {
      mode: 'text',
-     pythonPath: '/Users/abhishek/Documents/Tools/homebrew/bin/python3',
+     pythonPath: '/usr/bin/python3',
      pythonOptions: ['-u'],
-     scriptPath: '/Users/abhishek/Documents/Docker/ANG2/angular2-auth-viydo/backend/',
+     scriptPath: '/var/lib/jenkins/workspace/nodejs_vidyo/angular2-auth-viydo/backend/',
      args: ['--key='+devKey, '--appID='+appId, '--userName='+user, '--expiresInSecs='+'300']
    };
 
