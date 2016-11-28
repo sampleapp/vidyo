@@ -50,6 +50,6 @@ http.createServer(app).listen(port, function (err) {
  https.createServer({
       key: fs.readFileSync('key.pem'),
       cert: fs.readFileSync('cert.pem')
-    }, app).listen(port,192.168.148.2, function(err) {
+    }, app).listen(port, function(err) {
        console.log('listening in https://localhost:' + port);
     });
